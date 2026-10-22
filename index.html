@@ -106,33 +106,34 @@
 
     <!-- Cabeçalho Institucional -->
     <header class="bg-gradient-to-r from-marituba-900 via-marituba-800 to-sesau-700 text-white shadow-lg sticky top-0 z-30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="flex items-center space-x-3.5">
-                <div class="bg-white/10 backdrop-blur-md p-2.5 rounded-xl border border-white/20 shadow-inner">
-                    <i class="fa-solid font-bold fa-notes-medical text-2xl text-emerald-300"></i>
-                </div>
-                <div>
-                    <h1 class="text-lg font-bold tracking-tight leading-tight">SESAU Marituba</h1>
-                    <p class="text-xs text-blue-100/80 font-medium">Suporte & Gestão de Tecnologia da Informação</p>
-                </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex items-center space-x-3.5">
+            <!-- Brasão de Marituba sem alterar o esquema de cores -->
+            <div class="bg-white/10 backdrop-blur-md p-1.5 rounded-xl border border-white/20 shadow-inner flex items-center justify-center">
+                <img src="LOGO-MARITUBA.png" alt="Brasão de Marituba" class="h-10 w-auto object-contain">
             </div>
-
-            <!-- Navegação por Abas -->
-            <nav class="flex bg-marituba-900/60 backdrop-blur-md p-1 rounded-xl border border-white/10 w-full sm:w-auto">
-                <button id="tab-gestor-btn" onclick="switchTab('gestor')" 
-                    class="flex-1 sm:flex-initial px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-2 bg-white text-marituba-900 shadow-sm">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <span>Abrir Chamado</span>
-                </button>
-                <button id="tab-ti-btn" onclick="switchTab('ti')" 
-                    class="flex-1 sm:flex-initial px-4 py-2 text-sm font-medium rounded-lg text-blue-100 hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-headset"></i>
-                    <span>Área Administrativa</span>
-                    <span id="badge-count-abertos" class="ml-1 px-2 py-0.5 text-xs bg-red-500 text-white font-bold rounded-full hidden">0</span>
-                </button>
-            </nav>
+            <div>
+                <h1 class="text-lg font-bold tracking-tight leading-tight"> Departamento de TI - SESAU Marituba</h1>
+                <p class="text-xs text-blue-100/80 font-medium">Suporte & Gestão de Tecnologia da Informação</p>
+            </div>
         </div>
-    </header>
+
+        <!-- Navegação por Abas -->
+        <nav class="flex bg-marituba-900/60 backdrop-blur-md p-1 rounded-xl border border-white/10 w-full sm:w-auto">
+            <button id="tab-gestor-btn" onclick="switchTab('gestor')" 
+                class="flex-1 sm:flex-initial px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 flex items-center justify-center gap-2 bg-white text-marituba-900 shadow-sm">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Abrir Chamado</span>
+            </button>
+            <button id="tab-ti-btn" onclick="switchTab('ti')" 
+                class="flex-1 sm:flex-initial px-4 py-2 text-sm font-medium rounded-lg text-blue-100 hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-headset"></i>
+                <span>Área Administrativa</span>
+                <span id="badge-count-abertos" class="ml-1 px-2 py-0.5 text-xs bg-red-500 text-white font-bold rounded-full hidden">0</span>
+            </button>
+        </nav>
+    </div>
+</header>
 
     <!-- Conteúdo Principal -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
